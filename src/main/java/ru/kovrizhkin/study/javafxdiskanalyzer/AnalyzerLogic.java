@@ -13,7 +13,7 @@ public class AnalyzerLogic {
 
     private HashMap<String, Long> sizes;
 
-    private Map<String, Long> calculateDirectorySize(Path path) {
+    public Map<String, Long> calculateDirectorySize(Path path) {
         try {
              sizes = new HashMap<>();
             Files.walkFileTree(
